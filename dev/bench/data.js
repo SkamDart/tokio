@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606416487655,
-  "repoUrl": "https://github.com/tokio-rs/tokio",
+  "lastUpdate": 1609703193120,
+  "repoUrl": "https://github.com/SkamDart/tokio",
   "entries": {
     "sync_rwlock": [
       {
@@ -809,6 +809,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 511,
             "range": "± 100",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3b6bee822dfe70caea7eb22b51fefb28d162f966",
+          "message": "net: add try_read_buf and try_recv_buf (#3351)",
+          "timestamp": "2021-01-02T10:37:34+01:00",
+          "tree_id": "07e4b0adca0fb334af5f3f09b7b6d98beae51eb5",
+          "url": "https://github.com/SkamDart/tokio/commit/3b6bee822dfe70caea7eb22b51fefb28d162f966"
+        },
+        "date": 1609703192202,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1020,
+            "range": "± 410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16047,
+            "range": "± 4387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1056,
+            "range": "± 54",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 17714,
+            "range": "± 8015",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 595,
+            "range": "± 162",
             "unit": "ns/iter"
           }
         ]
